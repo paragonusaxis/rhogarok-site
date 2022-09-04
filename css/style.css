@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    color: #000000;
+    box-sizing: border-box;
+
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-bottom: 15rem;
+}
+
+.wrapper{
+    width: 100%;
+    border: solid 1px rgb(87, 87, 87);
+    padding: 3rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(214, 214, 214);
+    margin-top: 15rem;
+}
+
+.form-control {
+    border: solid 1px rgb(167, 167, 167);
+    border-radius: 8px;
+}
+
+.download {
+    margin: 2rem;
+}
+
+.ab {
+    margin-top: -10rem;
+    transform: translateY(80%);
+}
+
+.wiz{
+    margin-top: -15rem;
+    transform: translate(-130%, 50%);
+}
+
+.group {
+    margin-top: -10rem;
+    transform: translateY(80%);
+}
+
+.sage {
+    margin-top: -12rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 2rem;
+        font-size: 1.0rem;
+    }
+
+    .wrapper{
+        margin-top: 10rem;
+    }
+    
+    .group{
+        scale: 0.8;
+    }
+
+    .ab{
+        scale: 0.8;
+    }
+
+    .wiz{
+        scale: 0.8;
+        margin-top: 0;
+        margin-bottom: -12rem;
+        transform: translate(0, -20%);
+    }
+
+    .sage{
+        scale: 0.8;
+    }
+    
+    .welcome-link {
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .download {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sage {
+        margin-top: -10rem;
+    }
+
+    .wrapper {
+        padding: 1.5rem;
+    }
+
+    .wiz {
+    }
+}
